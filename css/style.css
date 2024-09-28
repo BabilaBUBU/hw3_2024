@@ -136,7 +136,7 @@ nav a:hover, nav a:focus{
 
 /* Step 5: Write selector/rule property to add the background image to the 
 first div in the grid  and place it in the grid. */
-.overview{
+.container > div:first-child{
   grid-column: 1 / -1;
   background-image: url('../images/header.jpg');
 }
@@ -146,7 +146,7 @@ first div in the grid  and place it in the grid. */
 
       /*This will be a lot of rules.... but be strategic and combine seletors*/
 .about, .method, .client, .contact{
-  grid-column: 2 / 3;
+  grid-column: 2 / span 1;
 }
 
 .about{
@@ -165,25 +165,25 @@ first div in the grid  and place it in the grid. */
   grid-row: 5;
 }
 
-.about-img, .method-img, .client-img, .contact-img{
+.about-image, .method-image, .client-image, .contact-image{
   grid-column: 1 / -1;
   max-height: 600px;
   overflow: hidden;
 }
 
-.about-img{
+.about-image{
   grid-row: 2;
 }
 
-.method-img{
+.method-image{
   grid-row: 3;
 }
 
-.client-img{
+.client-image{
   grid-row: 4;
 }
 
-.contact-img{
+.contact-image{
   grid-row: 5;
 }
 
