@@ -145,7 +145,7 @@ first div in the grid  and place it in the grid. */
  four rows in the grid. */
 
       /*This will be a lot of rules.... but be strategic and combine seletors*/
-.about, .method, .client, .contact{
+.about, .method, .clients, .contact{
   grid-column: 2 / span 1;
 }
 
@@ -157,7 +157,7 @@ first div in the grid  and place it in the grid. */
   grid-row: 3;
 }
 
-.client{
+.clients{
   grid-row: 4;
 }
 
@@ -165,7 +165,7 @@ first div in the grid  and place it in the grid. */
   grid-row: 5;
 }
 
-.about-image, .method-image, .client-image, .contact-image{
+.about-image, .method-image, .clients-image, .contact-image{
   grid-column: 1 / -1;
   max-height: 600px;
   overflow: hidden;
@@ -179,7 +179,7 @@ first div in the grid  and place it in the grid. */
   grid-row: 3;
 }
 
-.client-image{
+.clients-image{
   grid-row: 4;
 }
 
